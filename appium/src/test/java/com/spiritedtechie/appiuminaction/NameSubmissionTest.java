@@ -12,7 +12,10 @@ import java.net.URL;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
-public class MyFirstTest {
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+public class NameSubmissionTest {
 
     private AppiumDriver<WebElement> driver;
 
@@ -39,11 +42,16 @@ public class MyFirstTest {
     }
 
     @Test
-    public void addContact() {
+    public void submitName() {
 
-        WebElement submitButton = driver.findElementByName("Submit");
-
+        WebElement nameEditText = driver.findElementById("et_name");
+        nameEditText.sendKeys("Bob Smith");
+        WebElement submitButton = driver.findElementById("btn_submit");
         submitButton.click();
+
+        WebElement nameSubmittedTextView = driver.findElementById("tv_name_submitted");
+
+        assertThat(nameSubmittedTextView.getText(), is("Bob Smith"));
     }
 
 }

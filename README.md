@@ -35,10 +35,10 @@ http://appium.io/downloads.html
 
     appium &
 
-6) Create and run an API 6.0 (Android M) emulator - easiest to do this from Android Studio
+6) Create and run an API 6.0 (Android M) emulator - easiest way to do this is from Android Studio
 
-7) Build the APK under the app folder
+7) Build the APKs from the root directory
 
     ./gradlew clean assemble
 
-8) Run the JUnit test MyFirstTest in the appium sub-module folder
+8) Run one of the JUnit tests in the 'appium' sub-module folder
