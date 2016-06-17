@@ -14,31 +14,31 @@ can be used e.g. Ruby, Java, Objective-C, Javascript.
 Setup
 -----
 
-1. Ensure Android SDK is installed and ANDROID_HOME set
+1) Ensure Android SDK is installed and ANDROID_HOME set
 
-2. Install Appium server (command line / Node NPM)
+2) Install Appium server (command line / Node NPM)
 
-    brew install node
+    brew install node   
     npm install -g appium
     npm install wd
     npm install -g appium-doctor
 
-3. Alternatively, install Appium server as OS application
+3) Alternatively, install Appium server as OS application
 
 http://appium.io/downloads.html
 
-4. Run Appium Doctor to check all is OK
+4) Run Appium Doctor to check all is OK
 
     appium-doctor
 
-5. Start Appium server
+5) Start Appium server
 
     appium &
 
-6. Create and run an API 6.0 (Android M) emulator - easiest to do this from Android Studio
+6) Create and run an API 6.0 (Android M) emulator - easiest to do this from Android Studio
 
-7. Build the APK under the app folder
+7) Build the APK under the app folder
 
     ./gradlew clean assemble
 
-8. Run the JUnit test MyFirstTest in the appium sub-module folder
+8) Run the JUnit test MyFirstTest in the appium sub-module folder
