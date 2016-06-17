@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+group 'com.spiritedtechie.appium-in-action'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        url "https://repository-saucelabs.forge.cloudbees.com/release"
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'io.appium', name: 'java-client', version: '4.0.0'
+}

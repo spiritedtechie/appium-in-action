@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Appium In Action Test App</string>
+    <string name="submitted_activity_name">Submitted</string>
+</resources>
