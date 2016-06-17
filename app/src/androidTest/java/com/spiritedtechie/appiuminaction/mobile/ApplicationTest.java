@@ -1,4 +1,4 @@
-package appiuminaction.mobile;
+package com.spiritedtechie.appiuminaction.mobile;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
