@@ -17,28 +17,28 @@ Setup
 1) Ensure Android SDK is installed and ANDROID_HOME set
 
 2) Install Appium server (command line / Node NPM)
-
-    brew install node   
-    npm install -g appium
-    npm install wd
-    npm install -g appium-doctor
-
+```
+brew install node   
+npm install -g appium
+npm install wd
+npm install -g appium-doctor
+```
 3) Alternatively, install Appium server as OS application
 
 http://appium.io/downloads.html
 
 4) Run Appium Doctor to check all is OK
-
-    appium-doctor
-
+```
+appium-doctor
+```
 5) Start Appium server
-
-    appium &
-
+```
+appium &
+```
 6) Create and run an API 6.0 (Android M) emulator - easiest way to do this is from Android Studio
 
 7) Build the APKs from the root directory
-
-    ./gradlew clean assemble
-
+```
+./gradlew clean assemble
+```
 8) Run one of the JUnit tests in the 'appium' sub-module folder
